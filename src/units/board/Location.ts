@@ -1,4 +1,5 @@
 import { Board } from './Board';
+import { Unit } from '../Unit';
 import { Team, CardLocation, UnitType } from '../../types/types';
 
 export class Location {
@@ -8,7 +9,7 @@ export class Location {
     this.board = board;
   }
 
-  getUnitCardLocation(unit: UnitType) {
+  getUnitCardLocation(unit: Unit) {
     let rowIndex = 0;
     let columnIndex = 0;
     let wasFound = false;
@@ -83,8 +84,7 @@ export class Location {
       unitCardLocation.columnIndex - 1 >= 0 && hasEnemiesNextLine;
 
     const hasRightEnemy: boolean =
-      unitCardLocation.columnIndex + 1 <
-        this.board.getBoardMatrix()[unitCardLocation.rowIndex].length &&
+      unitCardLocation.columnIndex + 1 < this.board.getBoardMatrix().length &&
       hasEnemiesNextLine;
 
     if (hasEnemiesNextLine) {
@@ -123,7 +123,7 @@ export class Location {
       .getBoardMatrix()
       [rowIndex].filter((u) => u && u.getHealth() > 0)
       .map((u) => {
-        const unitCardLocation = this.getUnitCardLocation(u as UnitType);
+        const unitCardLocation = this.getUnitCardLocation(u as Unit);
         if (unitCardLocation) {
           return unitCardLocation;
         }
@@ -133,7 +133,7 @@ export class Location {
 
   getTeamOfNextLine(unitCardLocation: CardLocation): Team | null {
     const team = this.getTeamOfUnits(unitCardLocation);
-    const teamValue: number = team ? 1 : -1;
+    const teamValue: number = team === Team.topTeam ? 1 : -1;
 
     if (
       this.getRowEnemiesLocation(unitCardLocation.rowIndex + teamValue)
@@ -155,14 +155,14 @@ export class Location {
     const teamOfUnits: Team = this.getTeamOfUnits(unitCardLocation);
     const rowsHalfIndex = Math.floor(matrix.length / 2);
 
-    if (teamOfUnits === Team.topTeam) {
-      for (let i = rowsHalfIndex; i < matrix.length; i += 1) {
+    if (teamOfUnits === Team.bottomTeam) {
+      for (let i = rowsHalfIndex - 1; i >= 0; i -= 1) {
         if (matrix[i].filter((u) => u).length) {
           return this.getRowEnemiesLocation(i).filter(this.removeDeadUnits);
         }
       }
     } else {
-      for (let i = rowsHalfIndex - 1; i >= 0; i -= 1) {
+      for (let i = rowsHalfIndex; i < matrix.length; i += 1) {
         if (matrix[i].filter((u) => u).length) {
           return this.getRowEnemiesLocation(i).filter(this.removeDeadUnits);
         }
@@ -190,7 +190,7 @@ export class Location {
         for (let j = 0; j < matrix[i].length; j += 1) {
           if (matrix[i][j]) {
             const enemyBoardLocation = this.getUnitCardLocation(
-              matrix[i][j] as UnitType
+              matrix[i][j] as Unit
             );
             if (enemyBoardLocation) {
               enemiesUnitsLocation.push(enemyBoardLocation);
@@ -203,7 +203,7 @@ export class Location {
         for (let j = 0; j < matrix[i].length; j += 1) {
           if (matrix[i][j]) {
             const enemyBoardLocation = this.getUnitCardLocation(
-              matrix[i][j] as UnitType
+              matrix[i][j] as Unit
             );
             if (enemyBoardLocation) {
               enemiesUnitsLocation.push(enemyBoardLocation);
