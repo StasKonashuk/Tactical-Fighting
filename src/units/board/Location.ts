@@ -1,6 +1,6 @@
 import { Board } from './Board';
 import { Unit } from '../Unit';
-import { Team, CardLocation, UnitType } from '../../types/types';
+import { Team, team, CardLocation, UnitType } from '../../types/types';
 
 export class Location {
   private board: Board;
@@ -56,11 +56,13 @@ export class Location {
     return value !== null && value !== undefined;
   }
 
-  getTeamOfUnits(unitCardLocation: CardLocation): Team {
-    return unitCardLocation.rowIndex <
-      Math.floor(this.board.getBoardMatrix().length / 2)
-      ? Team.topTeam
-      : Team.bottomTeam;
+  getTeamOfUnits(unitCardLocation: CardLocation): team {
+    if (unitCardLocation) {
+      return unitCardLocation.rowIndex <
+        Math.floor(this.board.getBoardMatrix().length / 2)
+        ? Team.topTeam
+        : Team.bottomTeam;
+    }
   }
 
   getEnemiesLocation(unitCardLocation: CardLocation): CardLocation[] {
@@ -131,7 +133,7 @@ export class Location {
       });
   }
 
-  getTeamOfNextLine(unitCardLocation: CardLocation): Team | null {
+  getTeamOfNextLine(unitCardLocation: CardLocation): team {
     const team = this.getTeamOfUnits(unitCardLocation);
     const teamValue: number = team === Team.topTeam ? 1 : -1;
 
@@ -152,7 +154,7 @@ export class Location {
     unitCardLocation: CardLocation
   ): CardLocation[] | null {
     const matrix = this.board.getBoardMatrix();
-    const teamOfUnits: Team = this.getTeamOfUnits(unitCardLocation);
+    const teamOfUnits: team = this.getTeamOfUnits(unitCardLocation);
     const rowsHalfIndex = Math.floor(matrix.length / 2);
 
     if (teamOfUnits === Team.bottomTeam) {
@@ -171,7 +173,7 @@ export class Location {
     return null;
   }
 
-  private switchTeam(team: Team) {
+  private switchTeam(team: team) {
     return team === Team.bottomTeam ? Team.topTeam : Team.bottomTeam;
   }
 
@@ -180,7 +182,7 @@ export class Location {
     allies = false
   ): CardLocation[] {
     const matrix = this.board.getBoardMatrix();
-    const teamOfUnits: Team = this.getTeamOfUnits(unitBoardLocation);
+    const teamOfUnits: team = this.getTeamOfUnits(unitBoardLocation);
     const consideringTeam = allies ? this.switchTeam(teamOfUnits) : teamOfUnits;
     const rowsHalfIndex = Math.floor(matrix.length / 2);
     const enemiesUnitsLocation = [];

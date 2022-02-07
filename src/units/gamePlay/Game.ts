@@ -3,7 +3,7 @@ import { Board } from '../board/Board';
 import { Location } from '../board/Location';
 import { Action } from '../board/Action';
 import { Unit } from '../Unit';
-import { CardLocation, Team, UnitType } from '../../types/types';
+import { CardLocation, team, Team, UnitType } from '../../types/types';
 import { UnitGenerator } from '../generators/UnitGenerator';
 
 type initialGameData = {
@@ -34,7 +34,7 @@ export class Game {
     };
   }
 
-  static finish(currentUnit: Unit): { isFinished: boolean; currentTeam: Team } {
+  static finish(currentUnit: Unit): { isFinished: boolean; currentTeam: team } {
     return {
       isFinished: !this.location
         .getAllEnemiesLocation(

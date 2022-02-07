@@ -12,6 +12,8 @@ export enum Team {
   bottomTeam = 'BOTTOM_TEAM',
 }
 
+export type team = Team | null | undefined;
+
 export type UnitType = Unit | null;
 
 export enum ActionType {
