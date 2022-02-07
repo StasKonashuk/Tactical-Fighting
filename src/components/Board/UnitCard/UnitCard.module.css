@@ -1,0 +1,25 @@
+.unitItem {
+  width: 220px;
+  height: 230px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.current {
+  width: 220px;
+  height: 230px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 5px solid green;
+}
+
+.target {
+  width: 220px;
+  height: 230px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 5px solid blue;
+}
