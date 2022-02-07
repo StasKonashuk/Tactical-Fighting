@@ -1,10 +1,10 @@
 import { Unit } from './Unit';
 import { Healer } from './units-types/damage-type/Healer';
 import { Range } from './units-types/range-type/Range';
-import { MassTarget } from './units-types/damage-count/MassTarget';
+import { SingleTarget } from './units-types/damage-count/SingleTarget';
 
 export class Monk extends Unit {
   constructor() {
-    super('Monk', 90, 40, 20, new Healer(), new Range(), new MassTarget());
+    super('Monk', 90, 40, 20, new Healer(), new Range(), new SingleTarget());
   }
 }
