@@ -1,0 +1,30 @@
+.orderContainer {
+  background-color: darkcyan;
+  border: 10px solid white;
+  padding: 40px 40px 70px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 50px;
+}
+
+.orderItem {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.orderItem:first-of-type {
+  width: 100px;
+  height: 120px;
+  z-index: 2;
+}
+
+.topTeam {
+  border: 5px solid blueviolet;
+}
+
+.bottomTeam {
+  border: 5px solid rgb(218, 196, 0);
+}
