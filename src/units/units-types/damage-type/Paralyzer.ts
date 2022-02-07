@@ -14,6 +14,8 @@ export class Paralyzer implements UnitDamageType {
       const enemy: UnitType = location.getUnitByLocation(enemyCardLocation);
       if (enemy) {
         enemy.setInitiative(0);
+        enemy.setIsParalyzed(true);
+        enemy.setIsDefending(false);
         damagedUnits.push(enemy);
       }
     });

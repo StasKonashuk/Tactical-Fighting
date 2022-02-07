@@ -15,6 +15,7 @@ export class Unit {
   private initiative: number;
   private originInitiative: number;
   private isDefending: boolean;
+  private isParalyzed: boolean;
   private unitType: UnitDamageType;
   private attackRangeType: UnitAttackRange;
   private damageCount: DamageCount;
@@ -35,6 +36,7 @@ export class Unit {
     this.initiative = initiative || 0;
     this.originInitiative = initiative || 0;
     this.isDefending = false;
+    this.isParalyzed = false;
     this.unitType = unitType || new Damager();
     this.attackRangeType = attackRangeType || new Melee();
     this.damageCount = damageCount || new SingleTarget();
@@ -98,6 +100,10 @@ export class Unit {
     return this.isDefending;
   }
 
+  getIsParalyzed(): boolean {
+    return this.isParalyzed;
+  }
+
   getUnitType(): UnitDamageType {
     return this.unitType;
   }
@@ -116,5 +122,9 @@ export class Unit {
 
   setIsDefending(value: boolean): void {
     this.isDefending = value;
+  }
+
+  setIsParalyzed(value: boolean): void {
+    this.isParalyzed = value;
   }
 }
