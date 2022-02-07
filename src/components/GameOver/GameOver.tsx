@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import { team, Team } from '../../types/types';
 import classNames from 'classnames';
+import { team, Team } from '../../types/types';
 import style from './GameOver.module.css';
 
 interface GameOverPropsType {
@@ -26,7 +26,9 @@ export const GameOver = ({
           {currentTeam === Team.bottomTeam ? 'Bottom team' : 'Top team'}
         </span>
       </span>
-      <button onClick={() => handleNewGame()}>New game</button>
+      <button type="button" onClick={() => handleNewGame()}>
+        New game
+      </button>
     </div>
   );
 };

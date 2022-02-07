@@ -30,7 +30,6 @@ function App(): ReactElement {
   const [toStartNewGame, setToStartNewGame] = useState<boolean>(false);
 
   function handleNewGame(): void {
-    console.log('Stae');
     setToStartNewGame(!toStartNewGame);
     setFinish(Game.finish(currentUnit as Unit));
   }
@@ -59,7 +58,6 @@ function App(): ReactElement {
   function handleAttack(): void {
     setToSelectTarget(!toSelectTarget);
     if (currentUnit?.getDamageCount() instanceof MassTarget) {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const attackAction = action?.doAction(
         ActionType.attack,
         currentUnit as Unit
@@ -70,7 +68,6 @@ function App(): ReactElement {
   }
 
   function handleDefense(): void {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const defendingAction = action?.doAction(
       ActionType.defense,
       currentUnit as Unit

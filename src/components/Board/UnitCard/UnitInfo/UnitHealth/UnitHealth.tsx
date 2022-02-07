@@ -21,7 +21,7 @@ export const UnitHealth = ({
             height: `${255 - (hp * 255) / startHp}px`,
           }}
           className={style.healthPointContainer}
-        ></div>
+        />
       )}
 
       <img

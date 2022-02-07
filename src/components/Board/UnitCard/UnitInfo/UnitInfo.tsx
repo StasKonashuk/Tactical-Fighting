@@ -1,7 +1,7 @@
+import { ReactElement } from 'react';
 import { UnitDamageType } from '../../../../units/units-types/damage-type/UnitDamageType';
 import { UnitHealth } from './UnitHealth/UnitHealth';
 import { UnitDamageValue } from './UnitDamageValue/UnitDamageValue';
-import { ReactElement } from 'react';
 import style from './UnitInfo.module.css';
 
 interface IUnitInfoProps {

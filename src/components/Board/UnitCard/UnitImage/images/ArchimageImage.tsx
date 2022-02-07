@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
-import style from './UnitImage.module.css';
 import classNames from 'classnames';
+import style from './UnitImage.module.css';
 import { team } from '../../../../../types/types';
 
 interface UnitImagePropsType {

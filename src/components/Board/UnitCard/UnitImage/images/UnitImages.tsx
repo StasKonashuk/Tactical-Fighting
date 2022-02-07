@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { SkeletonImage } from './SkeletonImage';
 import { BanditImage } from './BanditImage';
 import { ArchimageImage } from './ArchimageImage';
@@ -15,7 +16,7 @@ interface UnitImagePropsType {
   gameRound: number | undefined;
 }
 
-export const UnitImages: { [key: string]: React.FC<UnitImagePropsType> } = {
+export const UnitImages: { [key: string]: FC<UnitImagePropsType> } = {
   SkeletonImage,
   BanditImage,
   ArchimageImage,

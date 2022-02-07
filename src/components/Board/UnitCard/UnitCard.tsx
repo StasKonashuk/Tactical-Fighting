@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import { Unit } from '../../../units/Unit';
 import classNames from 'classnames';
+import { Unit } from '../../../units/Unit';
 import { UnitImage } from './UnitImage/UnitImage';
 import { UnitInfo } from './UnitInfo/UnitInfo';
 import style from './UnitCard.module.css';

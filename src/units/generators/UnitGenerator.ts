@@ -23,7 +23,7 @@ export class UnitGenerator {
   *generator() {
     while (true) {
       yield* this.unitList;
-      this.round++;
+      this.round += 1;
     }
   }
 
