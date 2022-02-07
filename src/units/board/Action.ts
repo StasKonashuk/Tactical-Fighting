@@ -1,7 +1,13 @@
 import { Location } from './Location';
 import { Board } from './Board';
 import { Unit } from '../Unit';
-import { CardLocation, UnitType, ActionType } from '../../types/types';
+import {
+  CardLocation,
+  UnitType,
+  ActionType,
+  Team,
+  team,
+} from '../../types/types';
 import { SingleTarget } from '../units-types/damage-count/SingleTarget';
 import { UnitGenerator } from '../generators/UnitGenerator';
 import { MassTarget } from '../units-types/damage-count/MassTarget';
@@ -113,5 +119,11 @@ export class Action {
 
   getBoardLocationOfTarget(unit: Unit): CardLocation | null {
     return this.location.getUnitCardLocation(unit);
+  }
+
+  getTeamOfUnit(unit: Unit): team {
+    return this.location.getTeamOfUnits(
+      this.location.getUnitCardLocation(unit) as CardLocation
+    );
   }
 }
