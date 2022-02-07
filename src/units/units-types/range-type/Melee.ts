@@ -1,5 +1,5 @@
 import { UnitAttackRange } from './UnitAttackRange';
-import { CardLocation, Team } from '../../../types/types';
+import { CardLocation, team } from '../../../types/types';
 import { Location } from '../../board/Location';
 
 export class Melee implements UnitAttackRange {
@@ -13,7 +13,7 @@ export class Melee implements UnitAttackRange {
       return enemiesLocation;
     }
 
-    const unitTeam: Team | null = location.getTeamOfUnits(unitCardLocation);
+    const unitTeam: team | null = location.getTeamOfUnits(unitCardLocation);
     if (unitTeam && unitTeam === location.getTeamOfNextLine(unitCardLocation)) {
       return [];
     }
