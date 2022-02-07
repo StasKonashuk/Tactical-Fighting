@@ -6,6 +6,7 @@ export class UnitGenerator {
   private unitList: Unit[];
   unitGenerator: Generator<Unit>;
   private currentUnit: Unit;
+  private round: number;
 
   constructor(units: UnitType[][], randomizer: Randomizer) {
     this.unitList = this.splitByEqualInitiative(
@@ -15,12 +16,14 @@ export class UnitGenerator {
       ...randomizer.shuffleListSequance(currentArray),
     ]);
     this.unitGenerator = this.generator();
+    this.round = 1;
     this.currentUnit = this.unitList[0];
   }
 
   *generator() {
     while (true) {
       yield* this.unitList;
+      this.round++;
     }
   }
 
@@ -88,6 +91,7 @@ export class UnitGenerator {
 
   private clearCurrentUnitParalyzation(): void {
     this.currentUnit.setInitiative(this.currentUnit.getOriginInitiative());
+    this.currentUnit.setIsParalyzed(false);
   }
 
   private removeDefending(): void {
@@ -107,5 +111,9 @@ export class UnitGenerator {
     });
 
     return list.sort((a, b) => a.getInitiative() - b.getInitiative());
+  }
+
+  getGameRound() {
+    return this.round;
   }
 }
