@@ -4,194 +4,198 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
 }
-._imgContainer_9unq1_1 {
+._imgContainer_1ow4p_1 {
   position: relative;
 }
-._unitImage_9unq1_9 {
-  width: 220px;
-  height: 235px;
+._unitImage_1ow4p_5 {
+  width: 170px;
+  height: 170px;
   box-sizing: border-box;
 }
-._orderImage_9unq1_21 {
+._orderImage_1ow4p_11 {
   border-radius: 5px;
   width: 100px;
-  height: 130px;
+  height: 110px;
 }
-._topTeam_9unq1_33 {
+._topTeam_1ow4p_17 {
   border: 5px solid red;
 }
-._bottomTeam_9unq1_41 {
+._bottomTeam_1ow4p_21 {
   border: 5px solid blue;
 }
-._gameRoundValue_9unq1_49 {
+._gameRoundValue_1ow4p_25 {
   position: absolute;
   top: 2px;
   left: 8px;
   color: #ff00b3;
   font-weight: 700;
 }
-._unitImageContainer_4af8q_1 {
+._unitImageContainer_1jszp_1 {
   position: relative;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
-._statusContainer_4af8q_15 {
+._statusContainer_1jszp_8 {
   position: absolute;
 }
-._unitStatus_4af8q_23 {
+._unitStatus_1jszp_12 {
   position: relative;
   filter: invert(90%) sepia(60%) saturate(5000%) hue-rotate(30deg);
-  bottom: 195px;
-  left: 40px;
-  width: 140px;
-  height: 140px;
+  bottom: 150px;
+  left: 30px;
+  width: 110px;
+  height: 110px;
 }
-._paralyzeStatus_4af8q_41 {
+._unitHealthContainer_132rz_1 {
   position: relative;
-  bottom: 195px;
-  left: 40px;
-  width: 140px;
-  height: 140px;
-}
-._unitHealthContainer_1ak17_1 {
-  position: relative;
-  bottom: 5px;
+  bottom: 1px;
   width: 50px;
   height: 50px;
 }
-._unitHealthContainer_1ak17_1 img {
+._unitHealthContainer_132rz_1 img {
   width: inherit;
   height: inherit;
 }
-._healthValue_1ak17_25 {
-  color: #fff;
-  font-weight: 700;
-  position: absolute;
-  top: 3px;
-  left: 5px;
+._unitHealthContainer_132rz_1 {
+  position: relative;
+  left: -18px;
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
 }
-._healthPointContainer_1ak17_41 {
+._healthValue_132rz_21 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  position: relative;
+  font-size: 13px;
+  bottom: 32px;
+  right: 18px;
+}
+._healthPointContainer_132rz_33 {
   top: -170px;
-  right: -15px;
+  right: 0px;
   width: 220px;
   position: absolute;
   background-color: #eb121275;
 }
-._damageIcon_3x87z_7 {
+._damageIcon_mnxoj_4 {
   position: relative;
   bottom: 0px;
-  left: 5px;
+  left: 2px;
   filter: invert(70%) sepia(60%) saturate(750%) hue-rotate(0deg);
 }
-._damageValue_3x87z_21 {
+._damageValue_mnxoj_11 {
   color: #fff;
   position: absolute;
   font-weight: 700;
-  bottom: 18px;
-  left: -15px;
+  bottom: 20px;
+  left: -11px;
+  font-size: 15px;
   z-index: 2;
 }
-._healIcon_3x87z_39 {
+._healIcon_mnxoj_21 {
+  width: 40px;
   position: relative;
-  bottom: 5px;
+  bottom: 2px;
+  left: 0px;
 }
-._healValue_3x87z_49 {
+._healValue_mnxoj_28 {
   color: #fff;
   position: absolute;
+  font-size: 15px;
   font-weight: 700;
-  bottom: 14px;
-  left: 5px;
+  bottom: 27px;
+  left: -7px;
   z-index: 2;
 }
-._paralizeIcon_3x87z_67 {
+._paralizeIcon_mnxoj_38 {
+  width: 30px;
+  height: 30px;
   position: relative;
   bottom: 0px;
-  left: 5px;
+  left: -10px;
   filter: invert(90%) sepia(60%) saturate(750%) hue-rotate(0deg);
 }
-._userInfoContainer_hcsqz_1 {
+._userInfoContainer_1xmig_1 {
   width: 188px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   margin: 0 15px;
-  bottom: 65px;
+  bottom: 50px;
 }
-._userInfoContainer_hcsqz_1 span {
-  font-size: 1em;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-._unitName_hcsqz_39 {
-  font-size: 10px;
+._unitName_1xmig_11 {
+  font-size: 13px;
+  width: 55px;
   font-weight: 700;
   color: #fff;
   position: relative;
   bottom: 3px;
-  left: 5px;
+  left: -20px;
 }
-._unitItem_tboye_1 {
-  width: 220px;
-  height: 230px;
+._unitItem_x4b7w_1 {
+  width: 170px;
+  height: 170px;
   border: 1px solid #000;
   box-sizing: border-box;
   overflow: hidden;
 }
-._current_tboye_17 {
-  width: 220px;
-  height: 230px;
+._current_x4b7w_9 {
+  width: 170px;
+  height: 170px;
   border: 1px solid #000;
   box-sizing: border-box;
   overflow: hidden;
   border: 5px solid green;
 }
-._target_tboye_35 {
-  width: 220px;
-  height: 230px;
+._target_x4b7w_18 {
+  width: 170px;
+  height: 170px;
   border: 1px solid #000;
   box-sizing: border-box;
   overflow: hidden;
   border: 5px solid blue;
 }
-._boardContainer_1w2cr_1 {
-  margin-top: 150px;
+._boardContainer_1w2iu_1 {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-._boardRow_1w2cr_15 {
+._boardRow_1w2iu_8 {
   width: inherit;
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
 }
-._boardRow_1w2cr_15:nth-child(1):before {
+._boardRow_1w2iu_8:nth-child(1):before {
   content: 'Top Team';
   color: red;
   position: absolute;
   top: 150px;
-  right: 750px;
+  right: 620px;
   font-size: 40px;
   font-weight: 700;
 }
-._boardRow_1w2cr_15:nth-child(2) {
-  margin-bottom: 100px;
+._boardRow_1w2iu_8:nth-child(2) {
+  margin-bottom: 30px;
 }
-._boardRow_1w2cr_15:nth-child(3):before {
+._boardRow_1w2iu_8:nth-child(3):before {
   content: 'Bottom Team';
   color: #00f;
   position: absolute;
-  bottom: 200px;
-  right: 720px;
+  bottom: 100px;
+  right: 580px;
   font-weight: 700;
   font-size: 40px;
 }
@@ -224,41 +228,40 @@ code {
 ._topTeam_1j0t4_61 {
   color: red;
 }
-._orderContainer_ntizx_1 {
+._orderContainer_bekev_1 {
+  position: absolute;
+  left: 40px;
+  top: 20px;
   background-color: #008b8b;
   border: 10px solid white;
-  padding: 40px 40px 70px;
+  padding: 20px 30px 10px 15px;
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-end;
-  margin-top: 50px;
 }
-._orderItem_ntizx_23 {
+._orderItem_bekev_14 {
   width: 100px;
-  height: 100px;
-  margin-right: 10px;
+  height: 110px;
+  margin-bottom: 10px;
 }
-._orderItem_ntizx_23:first-of-type {
-  width: 100px;
-  height: 120px;
+._orderItem_bekev_14:first-of-type {
+  position: relative;
+  left: 15px;
+  padding: 2px;
+  border-radius: 10px;
+  border: 5px solid rgb(2, 189, 2);
   z-index: 2;
 }
-._topTeam_ntizx_47 {
-  border: 5px solid blueviolet;
-}
-._bottomTeam_ntizx_55 {
-  border: 5px solid rgb(218, 196, 0);
-}
-._turnControllerContainer_ty334_1 {
+._turnControllerContainer_1q3tj_1 {
   margin-top: auto;
   margin-bottom: 20px;
   display: flex;
 }
-._attackButton_ty334_13 {
+._attackButton_1q3tj_7 {
   position: absolute;
-  top: 625px;
-  right: 250px;
+  top: 340px;
+  right: 260px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -271,14 +274,14 @@ code {
   margin: 10px;
   background-color: #eb5237;
 }
-._damageIcon_ty334_47 {
+._damageIcon_1q3tj_24 {
   width: 40px;
   height: 40px;
   margin-left: 5px;
 }
-._defenseButton_ty334_59 {
+._defenseButton_1q3tj_30 {
   position: absolute;
-  top: 625px;
+  top: 340px;
   right: 90px;
   border-radius: 5px;
   display: flex;
@@ -292,7 +295,7 @@ code {
   margin: 10px;
   background-color: #2fc46d;
 }
-._turnControllerContainer_ty334_1 button:hover {
+._turnControllerContainer_1q3tj_1 button:hover {
   cursor: pointer;
   background-color: gray;
 }
@@ -303,12 +306,10 @@ code {
   height: 100vh;
   overflow-y: hidden;
 }
-._appContainer_pa11e_1 {
+._appContainer_90v0z_1 {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/64fbd1ee-9380-4416-9b5e-f32dedaacb82/derx2lh-9893806f-866b-4b74-a1fe-343aa31425ff.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0ZmJkMWVlLTkzODAtNDQxNi05YjVlLWYzMmRlZGFhY2I4MlwvZGVyeDJsaC05ODkzODA2Zi04NjZiLTRiNzQtYTFmZS0zNDNhYTMxNDI1ZmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rc8WIlYuY2W7ECxLJ7dQjl_0_UgPo1uC7o3bPrWAudE);
   background-size: cover;
-  height: 1600px;
 }
