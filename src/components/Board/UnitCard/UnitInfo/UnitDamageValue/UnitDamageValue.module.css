@@ -4,7 +4,7 @@
 .damageIcon {
   position: relative;
   bottom: 0px;
-  left: 5px;
+  left: 2px;
   filter: invert(70%) sepia(60%) saturate(750%) hue-rotate(0deg);
 }
 
@@ -12,28 +12,34 @@
   color: rgb(255, 255, 255);
   position: absolute;
   font-weight: 700;
-  bottom: 18px;
-  left: -15px;
+  bottom: 20px;
+  left: -11px;
+  font-size: 15px;
   z-index: 2;
 }
 
 .healIcon {
+  width: 40px;
   position: relative;
-  bottom: 5px;
+  bottom: 2px;
+  left: 0px;
 }
 
 .healValue {
   color: rgb(255, 255, 255);
   position: absolute;
+  font-size: 15px;
   font-weight: 700;
-  bottom: 14px;
-  left: 5px;
+  bottom: 27px;
+  left: -7px;
   z-index: 2;
 }
 
 .paralizeIcon {
+  width: 30px;
+  height: 30px;
   position: relative;
   bottom: 0px;
-  left: 5px;
+  left: -10px;
   filter: invert(90%) sepia(60%) saturate(750%) hue-rotate(0deg);
 }

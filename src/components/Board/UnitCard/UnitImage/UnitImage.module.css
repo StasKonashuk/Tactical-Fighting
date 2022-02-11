@@ -12,16 +12,8 @@
 .unitStatus {
   position: relative;
   filter: invert(90%) sepia(60%) saturate(5000%) hue-rotate(30deg);
-  bottom: 195px;
-  left: 40px;
-  width: 140px;
-  height: 140px;
-}
-
-.paralyzeStatus {
-  position: relative;
-  bottom: 195px;
-  left: 40px;
-  width: 140px;
-  height: 140px;
+  bottom: 150px;
+  left: 30px;
+  width: 110px;
+  height: 110px;
 }

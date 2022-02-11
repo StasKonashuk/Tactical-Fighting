@@ -6,8 +6,8 @@
 
 .attackButton {
   position: absolute;
-  top: 625px;
-  right: 250px;
+  top: 340px;
+  right: 260px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -29,7 +29,7 @@
 
 .defenseButton {
   position: absolute;
-  top: 625px;
+  top: 340px;
   right: 90px;
   border-radius: 5px;
   display: flex;

@@ -1,5 +1,5 @@
 .boardContainer {
-  margin-top: 150px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -17,21 +17,21 @@
   color: red;
   position: absolute;
   top: 150px;
-  right: 750px;
+  right: 620px;
   font-size: 40px;
   font-weight: 700;
 }
 
 .boardRow:nth-child(2) {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 .boardRow:nth-child(3)::before {
   content: 'Bottom Team';
   color: blue;
   position: absolute;
-  bottom: 200px;
-  right: 720px;
+  bottom: 100px;
+  right: 580px;
   font-weight: 700;
   font-size: 40px;
 }

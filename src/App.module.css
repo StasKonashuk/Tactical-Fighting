@@ -1,9 +1,7 @@
 .appContainer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/64fbd1ee-9380-4416-9b5e-f32dedaacb82/derx2lh-9893806f-866b-4b74-a1fe-343aa31425ff.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzY0ZmJkMWVlLTkzODAtNDQxNi05YjVlLWYzMmRlZGFhY2I4MlwvZGVyeDJsaC05ODkzODA2Zi04NjZiLTRiNzQtYTFmZS0zNDNhYTMxNDI1ZmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.rc8WIlYuY2W7ECxLJ7dQjl_0_UgPo1uC7o3bPrWAudE');
   background-size: cover;
-  height: 1600px;
 }
