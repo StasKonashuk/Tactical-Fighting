@@ -1,8 +1,8 @@
+import { ReactElement } from 'react';
 import { UnitDamageType } from '../../../../../units/units-types/damage-type/UnitDamageType';
 import { Damager } from '../../../../../units/units-types/damage-type/Damager';
 import { Healer } from '../../../../../units/units-types/damage-type/Healer';
 import { Paralyzer } from '../../../../../units/units-types/damage-type/Paralyzer';
-import { ReactElement } from 'react';
 import style from './UnitDamageValue.module.css';
 
 interface UnitDamageValuePropsType {

@@ -23,11 +23,12 @@ export const UnitHealth = ({
           className={style.healthPointContainer}
         />
       )}
-
-      <img
-        src="https://img.icons8.com/glyph-neue/100/fa314a/like.png"
-        alt="hp"
-      />
+      <div className={style.unitHealthContainer}>
+        <img
+          src="https://img.icons8.com/glyph-neue/100/fa314a/like.png"
+          alt="hp"
+        />
+      </div>
       <span className={style.healthValue}>{hp}</span>
     </div>
   );
