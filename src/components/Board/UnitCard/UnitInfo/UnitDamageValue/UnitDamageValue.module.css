@@ -1,0 +1,45 @@
+.unitDamageContainer {
+}
+
+.damageIcon {
+  position: relative;
+  bottom: 0px;
+  left: 2px;
+  filter: invert(70%) sepia(60%) saturate(750%) hue-rotate(0deg);
+}
+
+.damageValue {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-weight: 700;
+  bottom: 20px;
+  left: -11px;
+  font-size: 15px;
+  z-index: 2;
+}
+
+.healIcon {
+  width: 40px;
+  position: relative;
+  bottom: 2px;
+  left: 0px;
+}
+
+.healValue {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700;
+  bottom: 27px;
+  left: -7px;
+  z-index: 2;
+}
+
+.paralizeIcon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  bottom: 0px;
+  left: -10px;
+  filter: invert(90%) sepia(60%) saturate(750%) hue-rotate(0deg);
+}

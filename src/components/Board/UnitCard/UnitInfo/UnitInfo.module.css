@@ -1,0 +1,19 @@
+.userInfoContainer {
+  width: 188px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 15px;
+  bottom: 50px;
+}
+
+.unitName {
+  font-size: 13px;
+  width: 55px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  bottom: 3px;
+  left: -20px;
+}

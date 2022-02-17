@@ -1,0 +1,34 @@
+.gameOverContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3em;
+  margin: auto auto;
+  height: 950px;
+  color: white;
+}
+
+.gameOverContainer button {
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 200px;
+  height: 70px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin-top: 30px;
+}
+
+.gameOverContainer button:hover {
+  background-color: wheat;
+}
+
+.bottomTeam {
+  color: blue;
+}
+
+.topTeam {
+  color: red;
+}
